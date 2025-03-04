@@ -1,0 +1,442 @@
+body{
+    margin: 0;
+}
+.clr{
+    clear: both;
+}
+.container {  display: grid;
+    grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 0.5fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img img learn-more learn-more"
+      "keyboard macintosh macintosh floppy"
+      "controller ipad ipad floppy"
+      "twitter popular tv tv";
+  }
+  
+  .img { grid-area: img; }
+  
+  .learn-more { grid-area: learn-more; }
+  
+  .keyboard { grid-area: keyboard; }
+  
+  .macintosh { grid-area: macintosh; }
+  
+  .floppy { grid-area: floppy; }
+  
+  .controller { grid-area: controller; }
+  
+  .ipad { grid-area: ipad; }
+  
+  .twitter { grid-area: twitter; }
+  
+  .popular { grid-area: popular; }
+  
+  .tv { grid-area: tv; }
+  .text{
+    width: 50%;
+    float: left;
+    padding-top: 70px;
+    padding-left: 30px;
+  }
+  .text span{
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgb(159, 163, 167);
+  }
+  .text h2{
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+  }
+  .text p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(159, 163, 167);
+  }
+  .photo{
+    float: right;
+    width: 40%;
+    padding-top: 50px;
+    padding-right: 30px;
+  }
+  .photo img{
+    width: 100%;
+  }
+  .learn-more{
+    background-color: #F7F8F9;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .learn-more span{
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgb(159, 163, 167);
+  }
+  .learn-more h2{
+    font-family: Arvo, sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    margin-top: 10px;
+  }
+  .learn-more a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #27b9c2;
+  }
+  .keyboard{
+    background-color: #F05638;
+    text-align: center;
+  }
+  .key-img{
+    width: 100%;
+    padding-top: 40px;
+  }
+.key-img img{
+  width: 100%;
+}
+.keyboard h2{
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  color: rgb(255, 251, 251);
+}
+.keyboard a{
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+  color: rgb(255, 200, 10);
+  text-decoration: none;
+}
+.macintosh{
+  display: flex;
+  gap: 50px;
+}
+.maci-text{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-left: 50px;
+}
+.maci-text span{
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgb(159, 163, 167);
+}
+.maci-text h2{
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+.mac-img{
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+  padding-right: 70px;
+}
+.mac-img img{
+  width: 100%;
+}
+.mac-text{
+  width: 50%;
+  padding-top: 60px;
+}
+.mac-text p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(159, 163, 167);
+}
+.mac-text a{
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #27b9c2;
+}
+.floppy{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8F76BC;
+  text-align: center;
+  text-wrap: wrap;
+}
+ .floppy .popular{
+  margin-top: 70px;
+  background-color: #8166B0;
+  border-radius: 50%;
+}
+.popular button{
+  background-color: #8A72B6;
+  color: white;
+  border:#8A72B6 1px solid;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  margin-top: 5px;
+}
+.popular button img{
+  width: 10px;
+}
+.popular button span{
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  line-height: 23px;
+  font-weight: 700;
+}
+.popular-img{
+  width: 70%;
+  padding-left: 40px;
+}
+.popular-img img{
+  width: 100%;
+}
+.popular span{
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.icloud{
+  margin-top: 60px;
+}
+.icloud h2{
+  font-family: Arvo, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+.icloud p{
+  font-family:"Open Sans", sans-serif ;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  
+}
+.icloud button{
+  background-color: #FFC80A;
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+  border-radius: 30px;
+  padding: 15px 30px;
+  margin-top: 40px;
+  border: #FFC80A 1px solid;
+}
+.controller{
+  background-color: #F7F8F9;
+  text-align: center;
+}
+.ctrl-img{
+  width: 80%;
+  padding-top: 50px;
+}
+.ctrl-img img{
+  width: 100%;
+}
+.controller h2{
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+}
+.controller a{
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 800;
+  color: rgb(39, 185, 194);
+}
+.ipad .container{
+  text-align: center;
+  background-color: #93B6B7;
+  padding: 30px 0 0;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+.ipad .container h2{
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 31px 0;
+  font-size: 22px;
+  font-family: Arvo, sans-serif;
+}
+.ipad-img .image{
+  width: 90%;
+  position: relative;
+  left: -7%;
+}
+.ipad-img .image img{
+  width: 100%;
+}
+.button{
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  border-radius: 5px;
+  background-color: #fa684f;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 20px;
+  border: #fa684f 1px solid;
+  color: #FFFFFF;
+}
+.twitter{
+  background-color: #38D5F4;
+  text-align: center;
+}
+.twitter .cont{
+  background-color: #35CFED;
+  border-radius: 50%;
+}
+.twit-img{
+  width: 15%;
+  padding-left: 140px;
+  padding-top: 30px;
+}
+.twit-img img{
+  width: 100%;
+}
+.twitter h2{
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.populr{
+  background-color: #F7F8F9;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.populr p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgb(255, 251, 251);
+  background-color: #7BC424;
+  border-radius: 4px;
+  border: #7BC424 1px solid;
+  width: 25%;
+  align-self: center;
+  margin-top: 40px;
+}
+.populr h2{
+  font-family:Arvo, sans-serif ;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgb(51, 51, 51);
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  
+}
+.tv{
+  background-color: #292929;
+  display: flex;
+  justify-content: space-between;
+}
+.tv-img{
+  width: 50%;
+}
+.tv-img img{
+  width: 100%;
+}
+.tv-text h2{
+  font-family:Arvo, sans-serif ;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color:rgb(255, 255, 255);
+  width: 70%;
+  margin: auto;
+  margin-top: 30%;
+  margin-left: 20%;
+  
+}
+@media screen and (max-width:767px) {
+  .container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "learn-more learn-more"
+      "img img"
+      "keyboard controller"
+      "macintosh macintosh"
+      "twitter floppy"
+      "ipad floppy"
+      "poplar poplar"
+      "tv tv";
+  }
+  
+  .learn-more { grid-area: learn-more; }
+  
+  .img { grid-area: img; }
+  
+  .keyboard { grid-area: keyboard; }
+  
+  .controller { grid-area: controller; }
+  
+  .macintosh { grid-area: macintosh; }
+  
+  .twitter { grid-area: twitter; }
+  
+  .ipad { grid-area: ipad; }
+  
+  .floppy { grid-area: floppy; }
+  
+  .poplar { grid-area: poplar; }
+  
+  .tv { grid-area: tv; }
+  
+}
